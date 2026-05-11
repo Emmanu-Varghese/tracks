@@ -16,5 +16,6 @@ export DATABASE_ENCODING=${DATABASE_ENCODING:-utf8}
 
 export RAILS_SERVE_STATIC_FILES=TRUE
 export RAILS_LOG_TO_STDOUT=TRUE
+bundle exec rails db:migrate
 
 exec "$@"
