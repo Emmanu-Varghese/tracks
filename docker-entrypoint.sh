@@ -34,4 +34,5 @@ echo "Running migrations..."
 bundle exec rails db:migrate
 
 echo "Starting Rails server..."
+bundle exec rake assets:precompile
 exec "$@"
