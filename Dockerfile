@@ -64,5 +64,4 @@ COPY --from=precompile /app/public/assets /app/public/assets
 FROM base AS development
 RUN bundle config set with development test
 RUN bundle install --jobs 4
-RUN bundle exec rake db:migrate
 
