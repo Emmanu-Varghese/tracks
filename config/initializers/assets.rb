@@ -15,3 +15,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 # Precompile jQuery UI datepicker locale files
 Rails.application.config.assets.precompile += Dir[Rails.root.join('app/assets/javascripts-jquery-ui/datepicker-*.js')].map { |f| File.basename(f) }
+Rails.application.config.assets.precompile += %w( favicon.ico )
